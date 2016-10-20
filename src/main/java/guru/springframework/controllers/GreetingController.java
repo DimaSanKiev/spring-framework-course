@@ -24,14 +24,14 @@ public class GreetingController {
     @Autowired
     @Qualifier("helloWorldServiceGerman")
     public void setHelloWorldServiceGerman(HelloWorldService helloWorldServiceGerman) {
-        this.helloWorldService = helloWorldServiceGerman;
+        this.helloWorldServiceGerman = helloWorldServiceGerman;
     }
 
     // German version is injected by name but with different configuration
     @Autowired
     @Qualifier("french")
     public void setHelloWorldServiceFrench(HelloWorldService helloWorldServiceFrench) {
-        this.helloWorldService = helloWorldServiceFrench;
+        this.helloWorldServiceFrench = helloWorldServiceFrench;
     }
 
     public String sayHello() {
